@@ -72,7 +72,7 @@ You need to install Python, that can be done [here](https://www.python.org)
 ### Installation
 1. Clone the repo
    ```sh
-   git clone https://github.com/logicguy1/The-all-in-one-discord-tool.git
+   git clonehttps://github.com/kiznov/nitro-gen-edited.git
    ```
 2. Install Python packages
    ```sh
@@ -89,7 +89,7 @@ You need to install Python, that can be done [here](https://www.python.org)
    
 #### Or this can be done using android with unrooted Termux
 ```
-git clone https://github.com/logicguy1/Discord-Nitro-Generator-and-Checker
+git clone https://github.com/kiznov/nitro-gen-edited
 pkg install python
 pip install discord_webhooks
 pip install requests
