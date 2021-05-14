@@ -28,22 +28,13 @@ class NitroGen: # Initialise the class
         else: # Or if it is unix
             print(f'\33]0;Nitro Generator and Checker - Made by Drillenissen#4268\a', end='', flush=True) # Update title of command prompt
 
-        print(""" █████╗ ███╗   ██╗ ██████╗ ███╗   ██╗██╗██╗  ██╗
-██╔══██╗████╗  ██║██╔═══██╗████╗  ██║██║╚██╗██╔╝
-███████║██╔██╗ ██║██║   ██║██╔██╗ ██║██║ ╚███╔╝
-██╔══██║██║╚██╗██║██║   ██║██║╚██╗██║██║ ██╔██╗
-██║  ██║██║ ╚████║╚██████╔╝██║ ╚████║██║██╔╝ ██╗
-╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
-                                                        """) # Print the title card
-        time.sleep(2) # Wait a few seconds
-        self.slowType("Made by: Drillenissen#4268 && Benz#4947", .02) # Print who developed the code
-        time.sleep(1) # Wait a little more
-        self.slowType("\nInput How Many Codes to Generate and Check: ", .02, newLine = False) # Print the first question
+        print("Made by: Drillenissen#4268 && Benz#4947") # Print who developed the code
+        print("\nInput How Many Codes to Generate and Check: ") # Print the first question
 
         num = int(input('')) # Ask the user for the amount of codes
 
         # Get the webhook url, if the user does not wish to use a webhook the message will be an empty string
-        self.slowType("\nDo you wish to use a discord webhook? \nIf so type it here or press enter to ignore: ", .02, newLine = False)
+        print("\nDo you wish to use a discord webhook? \nIf so type it here or press enter to ignore: ")
         url = input('') # Get the awnser
         webhook = url if url != "" else None # If the url is empty make it be None insted
 
@@ -84,13 +75,6 @@ Results:
         input("\nThe end! Press Enter 5 times to close the program.") # Tell the user the program finished
         [input(i) for i in range(4,0,-1)] # Wait for 4 enter presses
 
-
-    def slowType(self, text, speed, newLine = True): # Function used to print text a little more fancier
-        for i in text: # Loop over the message
-            print(i, end = "", flush = True) # Print the one charecter, flush is used to force python to print the char
-            time.sleep(speed) # Sleep a little before the next one
-        if newLine: # Check if the newLine argument is set to True
-            print() # Print a final newline to make it act more like a normal print statement
 
     def generator(self, amount): # Function used to generate and store nitro codes in a seperate file
         with open(self.fileName, "w", encoding="utf-8") as file: # Load up the file in write mode
