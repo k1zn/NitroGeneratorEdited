@@ -29,13 +29,11 @@ class NitroGen: # Initialise the class
             print(f'\33]0;Nitro Generator and Checker - Made by Drillenissen#4268\a', end='', flush=True) # Update title of command prompt
 
         print("Made by: Drillenissen#4268 && Benz#4947") # Print who developed the code
-        print("\nInput How Many Codes to Generate and Check: ") # Print the first question
 
-        num = int(input('')) # Ask the user for the amount of codes
+        num = int(input("\nInput How Many Codes to Generate and Check: ")) # Ask the user for the amount of codes
 
         # Get the webhook url, if the user does not wish to use a webhook the message will be an empty string
-        print("\nDo you wish to use a discord webhook? \nIf so type it here or press enter to ignore: ")
-        url = input('') # Get the awnser
+        url = input("\nDo you wish to use a discord webhook? \nIf so type it here or press enter to ignore: ") # Get the awnser
         webhook = url if url != "" else None # If the url is empty make it be None insted
 
         # print() # Print a newline for looks
@@ -72,8 +70,9 @@ Results:
  Invalid: {invalid}
  Valid Codes: {', '.join(valid )}""") # Give a report of the results of the check
 
-        input("\nThe end! Press Enter 5 times to close the program.") # Tell the user the program finished
-        [input(i) for i in range(4,0,-1)] # Wait for 4 enter presses
+        answ = input("Do you want to start again? [y/n]: ")
+        if answ == "y":
+            NitroGen().main()
 
 
     def generator(self, amount): # Function used to generate and store nitro codes in a seperate file
