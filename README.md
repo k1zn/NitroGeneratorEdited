@@ -1,6 +1,6 @@
 
   
-  <h3 align="center">Discord Nitro Generator and Checker</h3>
+  <h3 align="center">Discord Nitro Generator and Checker with deleted slow-type :D</h3>
 
   <p align="center">
     A discord nitro generator and checker for all your nitro needs
