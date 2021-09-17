@@ -42,7 +42,7 @@
 
 ## About The Project
 
-<img src="https://i.imgur.com/HWCTnMl.png" alt="Image of product">
+<img src="https://i.imgur.com/lnZhS3f.png" alt="Image of product">
 
 It generates and checks discord nitro codes at the same time for maximum efficiency
 
