@@ -62,7 +62,7 @@ You need to install Python, that can be done [here](https://www.python.org)
 ### Installation
 1. Clone the repo
    ```sh
-   git clone https://github.com/kiznov/nitro-gen-edited.git
+   git clone https://github.com/k1zn/nitro-gen-edited.git
    ```
 2. Install Python packages
    ```sh
@@ -79,7 +79,7 @@ You need to install Python, that can be done [here](https://www.python.org)
    
 #### Or this can be done using android with unrooted Termux
 ```
-git clone https://github.com/kiznov/nitro-gen-edited
+git clone https://github.com/k1zn/nitro-gen-edited
 pkg install python
 pip install discord_webhooks
 pip install requests
